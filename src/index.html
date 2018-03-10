@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mapamexico">
+
+<head>
+  <title>MapHub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-dark">
+    <h1>MapHub</h1>
+  </nav>
+  <div class="container">
+
+    <form>
+      <div class="row">
+        <div class="col-sm">
+
+
+          <h3>¿En qué estado resides?</h3>
+          <select class="form-control shadow">
+            <option>- Elige tu estado -</option>
+            <option>Aguascalientes</option>
+            <option>Baja California</option>
+            <option>Baja California Sur</option>
+            <option>Campeche</option>
+            <option>Coahuila</option>
+            <option>Colima</option>
+            <option>Chiapas</option>
+            <option>Chihuahua</option>
+            <option>Ciudad de México</option>
+            <option>Durango</option>
+            <option>Guanajuato</option>
+            <option>Guerrero</option>
+            <option>Hidalgo</option>
+            <option>Jalisco</option>
+            <option>Estado de México</option>
+            <option>Michoacán</option>
+            <option>Morelos</option>
+            <option>Nayarit</option>
+            <option>Nuevo León</option>
+            <option>Oaxaca</option>
+            <option>Puebla</option>
+            <option>Querétaro</option>
+            <option>Quintana Roo</option>
+            <option>San Luis Potosí</option>
+            <option>Sinaloa</option>
+            <option>Sonora</option>
+            <option>Tabasco</option>
+            <option>Tamaulipas</option>
+            <option>Tlaxcala</option>
+            <option>Veracruz</option>
+            <option>Yucatán</option>
+            <option>Zacatecas</option>
+          </select>
+        </div>
+
+        <div class="col-sm">
+
+          <h3>¿Cuál es tu género?</h3>
+          <label class="c-input c-radio">
+            <input id="radio1" name="radio" type="radio">
+            <span class="c-indicator"></span>Hombre
+          </label>
+
+          <label class="c-input c-radio">
+            <input id="radio2" name="radio" type="radio">
+            <span class="c-indicator"></span>
+            Mujer
+          </label>
+          <label class="c-input c-radio">
+            <input id="radio3" name="radio" type="radio">
+            <span class="c-indicator"></span>
+            Otro
+          </label>
+        </div>
+      </div>
+      <!--    <select class="form-control">
+            <option>- Elige tu género -</option>
+            <option>Hombre</option>
+            <option>Mujer</option>
+            <option>Otro</option>
+          </select>-->
+      <h2>¿Cuál es el problema más importante por resolver en el país?</h2>
+      <p>A continuación te presentaremos los tópicos del Plan de Desarrollo Nacional en México; elige los 5 tópicos que consideres
+        más importantes y en los que debe trabajar el próximo presidente electo.</p>
+      <h3>Elige cinco:</h3>
+      <div class="btn-matrix">
+        <button value="" type="button" class="btn btn-secondary">Democracia</button>
+        <button value="" type="button" class="btn btn-secondary">Federalismo articulado.
+          <small>Que todos los órganos de gobierno cumplan sus funciones</small>
+        </button>
+        <button value="" type="button" class="btn btn-secondary">Seguridad Nacional </button>
+        <button value="" type="button" class="btn btn-secondary">Defensa Exterior e Interior: Militarización</button>
+        <button value="" type="button" class="btn btn-secondary">Seguridad Pública</button>
+        <button value="" type="button" class="btn btn-secondary">Sistema de Justicia Penal</button>
+        <button value="" type="button" class="btn btn-secondary">Derechos humanos</button>
+        <button value="" type="button" class="btn btn-secondary">Combate a la corrupción</button>
+        <button value="" type="button" class="btn btn-secondary">Desigualdad y discriminación</button>
+        <button value="" type="button" class="btn btn-secondary">Salud</button>
+        <button value="" type="button" class="btn btn-secondary">Cultura y Deporte</button>
+        <button value="" type="button" class="btn btn-secondary">Ciencia y tecnología</button>
+        <button value="" type="button" class="btn btn-secondary">Sistema de Seguridad Social.
+          <small>Programas de desarrollo y apoyo a familias</small>
+        </button>
+        <button value="" type="button" class="btn btn-secondary">Educación</button>
+        <button value="" type="button" class="btn btn-secondary">Economía y acceso a financiamiento</button>
+        <button value="" type="button" class="btn btn-secondary">Empleo</button>
+        <button value="" type="button" class="btn btn-secondary">Desarrollo sustentable</button>
+        <button value="" type="button" class="btn btn-secondary">Energía</button>
+        <button value="" type="button" class="btn btn-secondary">Minería</button>
+        <button value="" type="button" class="btn btn-secondary">Sector agroalimentario</button>
+        <button value="" type="button" class="btn btn-secondary">Sector turístico</button>
+        <button value="" type="button" class="btn btn-secondary">Desarrollo Regional</button>
+        <button value="" type="button" class="btn btn-secondary">Presencia Global</button>
+        <button value="" type="button" class="btn btn-secondary">Libre Comercio</button>
+        <button value="" type="button" class="btn btn-secondary">Migración</button>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+    <div class="mapa" style="width:80%">
+      <mapa-mexico></mapa-mexico>
+    </div>
+    <!-- Conecta con las dependencias de Bootstrap .js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!-- Conecta con D3 -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <!-- Conecta con Angular.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <!-- Conecta con app.js -->
+    <script src="/app/app.js"></script>
+</body>
+</html>

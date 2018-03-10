@@ -1,0 +1,117 @@
+<% include partials/header %>
+
+<nav class="navbar navbar-dark">
+    <h1>MapHub</h1>
+  </nav>
+  <div class="container">
+
+    <form action="/vota" method="POST">
+      <div class="row">
+        <div class="col-sm">
+          <h3>¿En qué estado resides?</h3>
+          <select name="estado" class="form-control shadow">
+            <option>- Elige tu estado -</option>
+            <option value="aguascalientes">Aguascalientes</option>
+            <option value="aguascalientes">Baja California</option>
+            <option value="aguascalientes">Baja California Sur</option>
+            <option value="aguascalientes">Campeche</option>
+            <option value="aguascalientes">Coahuila</option>
+            <option value="aguascalientes">Colima</option>
+            <option value="aguascalientes">Chiapas</option>
+            <option value="aguascalientes">Chihuahua</option>
+            <option value="aguascalientes">Ciudad de México</option>
+            <option value="aguascalientes">Durango</option>
+            <option value="aguascalientes">Guanajuato</option>
+            <option value="aguascalientes">Guerrero</option>
+            <option value="aguascalientes">Hidalgo</option>
+            <option value="aguascalientes">Jalisco</option>
+            <option value="aguascalientes">Estado de México</option>
+            <option value="aguascalientes">Michoacán</option>
+            <option value="aguascalientes">Morelos</option>
+            <option value="aguascalientes">Nayarit</option>
+            <option value="aguascalientes">Nuevo León</option>
+            <option value="aguascalientes">Oaxaca</option>
+            <option value="aguascalientes">Puebla</option>
+            <option value="aguascalientes">Querétaro</option>
+            <option value="aguascalientes">Quintana Roo</option>
+            <option value="aguascalientes">San Luis Potosí</option>
+            <option value="aguascalientes">Sinaloa</option>
+            <option value="aguascalientes">Sonora</option>
+            <option value="aguascalientes">Tabasco</option>
+            <option value="aguascalientes">Tamaulipas</option>
+            <option value="aguascalientes">Tlaxcala</option>
+            <option value="aguascalientes">Veracruz</option>
+            <option value="aguascalientes">Yucatán</option>
+            <option value="aguascalientes">Zacatecas</option>
+          </select>
+        </div>
+
+        <div class="col-sm">
+
+          <h3>¿Cuál es tu género?</h3>
+          <label class="c-input c-radio">
+            <input id="radio1" name="radio" type="radio">
+            <span class="c-indicator"></span>Hombre
+          </label>
+
+          <label class="c-input c-radio">
+            <input id="radio2" name="radio" type="radio">
+            <span class="c-indicator"></span>
+            Mujer
+          </label>
+          <label class="c-input c-radio">
+            <input id="radio3" name="radio" type="radio">
+            <span class="c-indicator"></span>
+            Otro
+          </label>
+        </div>
+      </div>
+      <!--    <select class="form-control">
+            <option>- Elige tu género -</option>
+            <option>Hombre</option>
+            <option>Mujer</option>
+            <option>Otro</option>
+          </select>-->
+      <h2>¿Cuál es el problema más importante por resolver en el país?</h2>
+      <p>A continuación te presentaremos los tópicos del Plan de Desarrollo Nacional en México; elige los 5 tópicos que consideres
+        más importantes y en los que debe trabajar el próximo presidente electo.</p>
+      <h3>Elige cinco:</h3>
+      <div class="btn-matrix">
+        <button value="" type="button" class="btn btn-secondary">Democracia</button>
+        <button value="" type="button" class="btn btn-secondary">Federalismo articulado.
+          <small>Que todos los órganos de gobierno cumplan sus funciones</small>
+        </button>
+        <button value="" type="button" class="btn btn-secondary">Seguridad Nacional </button>
+        <button value="" type="button" class="btn btn-secondary">Defensa Exterior e Interior: Militarización</button>
+        <button value="" type="button" class="btn btn-secondary">Seguridad Pública</button>
+        <button value="" type="button" class="btn btn-secondary">Sistema de Justicia Penal</button>
+        <button value="" type="button" class="btn btn-secondary">Derechos humanos</button>
+        <button value="" type="button" class="btn btn-secondary">Combate a la corrupción</button>
+        <button value="" type="button" class="btn btn-secondary">Desigualdad y discriminación</button>
+        <button value="" type="button" class="btn btn-secondary">Salud</button>
+        <button value="" type="button" class="btn btn-secondary">Cultura y Deporte</button>
+        <button value="" type="button" class="btn btn-secondary">Ciencia y tecnología</button>
+        <button value="" type="button" class="btn btn-secondary">Sistema de Seguridad Social.
+          <small>Programas de desarrollo y apoyo a familias</small>
+        </button>
+        <button value="" type="button" class="btn btn-secondary">Educación</button>
+        <button value="" type="button" class="btn btn-secondary">Economía y acceso a financiamiento</button>
+        <button value="" type="button" class="btn btn-secondary">Empleo</button>
+        <button value="" type="button" class="btn btn-secondary">Desarrollo sustentable</button>
+        <button value="" type="button" class="btn btn-secondary">Energía</button>
+        <button value="" type="button" class="btn btn-secondary">Minería</button>
+        <button value="" type="button" class="btn btn-secondary">Sector agroalimentario</button>
+        <button value="" type="button" class="btn btn-secondary">Sector turístico</button>
+        <button value="" type="button" class="btn btn-secondary">Desarrollo Regional</button>
+        <button value="" type="button" class="btn btn-secondary">Presencia Global</button>
+        <button value="" type="button" class="btn btn-secondary">Libre Comercio</button>
+        <button value="" type="button" class="btn btn-secondary">Migración</button>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+    <div class="mapa" style="width:80%">
+      <mapa-mexico></mapa-mexico>
+    </div>
+
+<% include partials/footer %>

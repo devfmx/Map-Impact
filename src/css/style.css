@@ -1,0 +1,81 @@
+body {
+  font-family: 'Oswald', sans-serif; }
+
+nav {
+  background-color: #D8D8D8; }
+
+h1, h2, h3 {
+  font-family: 'Slabo 27px', serif;
+  padding: .8em 0; }
+
+.btn-matrix {
+  flex-wrap: wrap;
+  padding: 5px; }
+
+.btn-secondary {
+  padding: 10px;
+  margin: 3px;
+  background-color: #5B6A91;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  -webkit-box-shadow: 2px 2px 3px 0 #C4C4C4;
+  box-shadow: 2px 2px 3px 0 #C4C4C4; }
+
+.shadow {
+  -webkit-box-shadow: 2px 2px 3px 0 #C4C4C4;
+  box-shadow: 2px 2px 3px 0 #C4C4C4; }
+
+small {
+  font-weight: 100;
+  font-size: .7em; }
+
+.c-input {
+  width: 110px; }
+
+.c-indicator {
+  margin-right: 10px; }
+
+polygon {
+  background-color: #FFF; }
+
+div#mapa {
+  width: 95%;
+  margin-top: 30px;
+  padding: 50px;
+  border: solid 1px #666666;
+  border-radius: 10px; }
+
+div#mapa svg polygon {
+  fill: #eee;
+  stroke: #888; }
+
+div#mapa svg text {
+  cursor: default; }
+
+div#mapa svg circle {
+  fill: red; }
+
+/* The heart of the matter
+.btn-matrix > .btn:nth-child(3n+4) {
+  clear: left;
+  margin-left: 0;
+}
+.btn-matrix > .btn:nth-child(n+4) {
+  margin-top: -1px;
+}
+.btn-matrix > .btn:first-child {
+  border-bottom-left-radius: 0;
+}
+.btn-matrix > .btn:nth-child(3) {
+  border-top-right-radius: 4px !important;
+}
+.btn-matrix > .btn:nth-last-child(3) {
+  border-bottom-left-radius: 4px !important;
+}
+.btn-matrix > .btn:last-child {
+  border-top-right-radius: 0;
+}
+
+*/
+.btn-matrix {
+  margin: 20px; }
